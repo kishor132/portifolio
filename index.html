@@ -7,10 +7,11 @@
     <title>KISHOR CR</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <style>
         body {
-            background-color: black;
+            background-color: rgb(0, 0, 0);
             color: white;
         }
 
@@ -22,8 +23,10 @@
         }
 
         .hero-section img {
-            width: 350px; /* Increased width */
-            height: 350px; /* Increased height */
+            width: 350px;
+            /* Increased width */
+            height: 350px;
+            /* Increased height */
             border-radius: 50%;
             margin-top: 20px;
             transition: transform 0.5s;
@@ -53,6 +56,7 @@
             from {
                 opacity: 0;
             }
+
             to {
                 opacity: 1;
             }
@@ -71,6 +75,92 @@
             border-radius: 5px;
             background-color: rgb(25, 24, 24);
         }
+
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #b4b2b0;
+        }
+
+        .timeline {
+            border-left: 2px solid #f39c12;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .timeline-item {
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+        }
+
+        .timeline-item h4 {
+            font-size: 1.25rem;
+            margin-bottom: 5px;
+        }
+
+        .timeline-item .position,
+        .timeline-item .degree {
+            color: #b4b2b0;
+        }
+
+        .timeline-item .duration {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        /* .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -9px;
+            background-color: #898681;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        } */
+        .timeline-item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.5s ease-in-out;
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* ======================================== */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-icon {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+.social-icon:hover {
+  color: #3498db;
+}
+
+
     </style>
 </head>
 
@@ -89,7 +179,7 @@
                         <a class="nav-link btn btn-outline- nav-btn" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-outline- nav-btn" href="#experience">Experience</a>
+                        <a class="nav-link btn btn-outline- nav-btn" href="#exp">Experience</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn btn-outline- nav-btn" href="#">Contact</a>
@@ -107,14 +197,66 @@
         <div class="d-flex justify-content-center">
             <img src="icons/1728452442816-removebg-preview.png" alt="Kishor CR's Profile Picture">
         </div>
-       
         <p class="mt-4">
-            I hold a degree in Computer Science Engineering and have worked as a Technical Support Engineer, where I honed my technical troubleshooting and problem-solving abilities. Currently, I am expanding my expertise in Angular development, aiming to transition into front-end development. I am eager to apply my technical background and new skills to contribute to innovative projects.
+            I hold a degree in Computer Science Engineering and have worked as a Technical Support Engineer, where I
+            honed my technical troubleshooting and problem-solving abilities. Currently, I am expanding my expertise in
+            Angular development, aiming to transition into front-end development. I am eager to apply my technical
+            background and new skills to contribute to innovative projects.
         </p>
     </section>
+    <!-- =============================================================================================================== -->
+   
+  <!-- ==================================================================================================================== -->
+<!-- footert -->
+ 
+
+  <!-- =========================== -->
+
+    <div id="exp" class="container my-5">
+        <div class="row">
+          
+            <div class="col-md-6">
+                <h3 class="section-title">Experience</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Aitrich Technologies Pvt Ltd,Thrissur</h4>
+                        <p class="position">Junior Angular Devoloper</p>
+                        <!-- <p class="duration">August 2019 - Present</p> -->
+                        <p>skilled in building responsive web applications using Angular, TypeScript, and modern web technologies. Experienced in developing user-friendly interfaces and integrating APIs efficiently. Passionate about creating high-quality code and continuously expanding technical expertise.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>GJ Infotech Pvt Ltd,Irinjalakuda</h4>
+                        <p class="position">Technical Support Engineer</p>
+                        <!-- <p class="duration">August 2016 - July 2019</p> -->
+                        <p>expertise in diagnosing and resolving complex technical issues to ensure seamless user experiences. Proficient in troubleshooting, customer support, and providing clear technical guidance. Committed to maintaining high service standards and enhancing system performance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Section -->
+            <div class="col-md-6">
+                <h3 class="section-title">Education</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>B-Tech.</h4>
+                        <p class="degree">Computer Science & Engineering</p>
+                        <!-- <p class="duration">April 2015</p> -->
+                        <p>Graduated in Computer Science & Engineering, providing a comprehensive understanding of computer systems, software development, and algorithm design. Focused on core areas like programming, data structures, operating systems, and database management. Equipped with problem-solving skills and knowledge of modern technologies to innovate and optimize engineering solutions.</p>
+                    </div>
+                    <!-- <div class="timeline-item">
+                        <h4>School of Cool Designers</h4>
+                        <p class="degree">B.A. Degree in Graphic Design</p>
+                        <p class="duration">August 2012</p>
+                        <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi...</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Experience Section -->
-    <section id="experience" class="experience-section container my-5">
+    <!-- <section id="experience" class="experience-section container my-5">
         <h1 class="text-center mb-4">Experience</h1>
         <div class="row">
             <div class="col-md-6 mb-4">
@@ -132,10 +274,44 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
+
+
+
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-content">
+            <p>&copy; 2024 Kishorcr. All rights reserved.</p>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/kishor-c-r-1a7bb2223/" target="_blank" class="social-icon">LinkedIn</a>
+              <a href="https://www.instagram.com/c_rkishor?igsh=OGludjBwMXRnZHht" target="_blank" class="social-icon">Instagram</a>
+              <a href="mailto:youremail@example.com" class="social-icon">Email</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script>document.addEventListener('DOMContentLoaded', () => {
+            const items = document.querySelectorAll('.timeline-item');
+
+            window.addEventListener('scroll', () => {
+                items.forEach(item => {
+                    const rect = item.getBoundingClientRect();
+                    if (rect.top < window.innerHeight) {
+                        item.classList.add('visible');
+                    }
+                });
+            });
+        });
+   
+
+
+        // Add 'visible' CSS class to trigger animations
+    </script>
+    
 
 </html>
